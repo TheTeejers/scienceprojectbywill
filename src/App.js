@@ -22,9 +22,7 @@ class App extends Component {
       <div className="App">
         <Header />
 
-        <p className="App-intro">
-          I wanted to know which pets cost more to own, cats or dogs!
-        </p>
+
 
 
 
