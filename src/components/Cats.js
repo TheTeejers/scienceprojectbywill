@@ -7,7 +7,7 @@ class Cats extends Component {
   render() {
     return (
         <div>
-          <form action='./Home'>
+          <form action='./'>
             <input className='returnHome' type="submit" value='Back to Select Pets!' />
           </form>
           <p> hello Cat world</p>
