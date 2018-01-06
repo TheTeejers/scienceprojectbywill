@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat Owner Survey</title>
+</head>
+<body>
+    <h1 class="pageTitle">
+      Which Pets Are Better?
+    </h1>
+    <p class="catIntro">
+      HELLO, CAT OWNER!<br> Please put whole number dollar amounts in each field.<br>If you do not know the exact amount of an item, please give your best educated guess!
+    </p>
+  </header>
+  <div>
+    <form action='./index.html'>
+      <input class='returnHome' type="submit" value='Back to Select Pets!' />
+    </form>
+    <p> hello Cat world</p>
+    <form id='petForm' method='post' encType='text/plain'>
+      <p>
+        What is your name?:
+        <input id='ownerName' type='text' name='ownerName' placeholder='Optional' size='20'/>
+      </p>
+      <p>
+        How many cats do you have?:
+        <input id='catsInFamily' type='number' min='0' name='catsInFamily' placeholder='How many cats?' size='20'/>
+      </p>
+      <p>
+        Cat Food (both wet and dry):
+        <input id='catFood' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Food Container:
+        <input id='catFoodContainer' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Food and Water Bowls:
+        <input id='catBowls' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Collars:
+        <input id='catCollars' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Litter:
+        <input id='catLitter' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Litter Box:
+        <input id='catLitterBox' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Litter Scooper:
+        <input id='catLitterScooper' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Toys:
+        <input id='catToys' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Medicine:
+        <input id='catMedicine' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Grooming:
+        <input id='catGrooming' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Carrier/Crate:
+        <input id='catCarrier' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Clothing:
+        <input id='catClothing' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Treats:
+        <input id='catTreats' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Bedding:
+        <input id='catBedding' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Tower:
+        <input id='catTower' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Scratching Post:
+        <input id='catScratchingPost' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Training (can include any thing to help cats stay off counters, beds, etc.):
+        <input id='catTraining' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        Cat Lodging/Boarding:
+        <input id='catLodging' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Sitter:
+        <input id='catSitter' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat Veterinary:
+        <input id='catVeterinary' type='number' min='0' name='name' placeholder='Cost per year?' size='20'/>
+      </p>
+      <p>
+        Cat House Modifications (cat doors, etc.):
+        <input id='catHouseModifications' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+      <p>
+        The Cat (did you buy your cat?):
+        <input id='catPurchase' type='number' min='0' name='name' placeholder='How much did it cost?' size='20'/>
+      </p>
+
+
+
+
+
+      <input className='submitButton' type='submit' value='Submit Cat Costs!'/>
+    </form>
+      <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+      <script src='./js/catDataCollection.js'></script>
+  </div>
+</body>
+</html>
