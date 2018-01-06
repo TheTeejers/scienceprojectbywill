@@ -241,6 +241,17 @@ function savePetCosts(
       catPurchase: catPurchase,
       dogPurchase: dogPurchase
   });
+
+  //show alert
+
+  document.querySelector('.alert').style.display = 'block';
+
+  //hide alert after three seconds
+
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none'
+  },10000);
+
 }
 
 

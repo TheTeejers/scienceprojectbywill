@@ -148,6 +148,17 @@ function savePetCosts(
       dogYardLeash: dogYardLeash,
       dogPurchase: dogPurchase
   });
+
+  //show alert
+
+  document.querySelector('.alert').style.display = 'block';
+
+  //hide alert after three seconds
+
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none'
+  },10000);
+
 }
 
 
