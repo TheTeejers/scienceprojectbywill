@@ -1,3 +1,13 @@
 body {
   text-align: center
 }
+
+.submitButton {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+.returnHome, .catsButton, .dogsButton, .catsAndDogsButton {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
