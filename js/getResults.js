@@ -70,40 +70,54 @@ function gotDataCats(data){
     catVeterinary.push(inputData[i].catVeterinary);
     catHouseModifications.push(inputData[i].catHouseModifications);
     catPurchase.push(inputData[i].catPurchase);
-    parseInt(catFood);
-    parseInt(catFoodContainer);
-    parseInt(catPurchase);
+    parseInt(catFood[i], 10);
+    parseInt(catFoodContainer, 10);
+    parseInt(catPurchase, 10);
 
     // $('ol').append('<li><p class="message">Owner Name: '+ catFood +'</p></li>');
   // console.log(inputData);
   }
+  var catPurchaseTotal = [];
+  for (var i = 0; i < catPurchase.length; i++ ){
+
+    if (catPurchase[i] !== '' ){
+
+      catPurchaseTotal.push(catPurchase[i]);
+    }
+    var catfoods = parseInt(catPurchaseTotal[i], 10);
+  }
     $('ol').append('<li><p class="message">Cat in the Family: '+ catsInFamily +'</p></li>');
     $('ol').append('<li><p class="message">Cat Food: '+ catFood +'</p></li>');
     $('ol').append('<li><p class="message">Cat Food Container: '+ catFoodContainer +'</p></li>');
-    $('ol').append('<li><p class="message">Cat Food Container: '+ catPurchase +'</p></li>');
-
+    $('ol').append('<li><p class="message">Cat Purchase: '+ catPurchase +'</p></li>');
+    parseInt(catFood[i], 10);
+    parseInt(catFoodContainer, 10);
+    parseInt(catPurchase[i], 10);
     console.log('catfood',catFood);
-    console.log(catFoodContainer)
-    console.log(catBowls);
-    console.log(catCollars);
-    console.log(catLitter);
-    console.log(catLitterBox);
-    console.log(catLitterScooper);
-    console.log(catToys);
-    console.log(catMedicine);
-    console.log(catGrooming);
-    console.log(catCarrier);
-    console.log(catClothing);
-    console.log(catTreats);
-    console.log(catBedding);
-    console.log(catTower);
-    console.log(catScratchingPost);
-    console.log(catTraining);
-    console.log(catLodging);
-    console.log(catSitter);
-    console.log(catVeterinary);
-    console.log(catHouseModifications);
-    console.log(catPurchase);
+    console.log('catFoodContainer',catFoodContainer)
+    console.log('catBowls', catBowls);
+    console.log('catCollars', catCollars);
+    console.log('catLitter', catLitter);
+    console.log('catLitterBox', catLitterBox);
+    console.log('catLitterScooper', catLitterScooper);
+    console.log('catToys', catToys);
+    console.log('catMedicine', catMedicine);
+    console.log('catGrooming', catGrooming);
+    console.log('catCarrier', catCarrier);
+    console.log('catClothing', catClothing);
+    console.log('catTreats', catTreats);
+    console.log('catBedding', catBedding);
+    console.log('catTower', catTower);
+    console.log('catScratchingPost', catScratchingPost);
+    console.log('catTraining', catTraining);
+    console.log('catLodging', catLodging);
+    console.log('catSitter', catSitter);
+    console.log('catVeterinary', catVeterinary);
+    console.log('catHouseModifications', catHouseModifications);
+    console.log('catPurchase', catPurchase);
+    console.log(parseInt(catPurchase[2])+parseInt(catPurchase[1]));
+    console.log(catFood.length);
+    console.log(catfoods);
 
     // return inputData[i].catsInFamily;
 
