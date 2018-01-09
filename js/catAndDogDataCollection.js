@@ -16,7 +16,6 @@ firebase.initializeApp(config);
 //referenece petCost collection
 
 var petCostsRef = firebase.database().ref('catAndDogCosts')
-
 //listen to submit form
 
 document.getElementById('petForm').addEventListener('submit', submitForm);
@@ -251,6 +250,8 @@ function savePetCosts(
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none'
   },10000);
+
+
 
 }
 
