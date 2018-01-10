@@ -15,7 +15,7 @@ firebase.initializeApp(config);
 
 //referenece petCost collection
 
-var petCostsRef = firebase.database().ref('dogCosts')
+var petCostsRef = firebase.database().ref('catAndDogCosts')
 
 //listen to submit form
 
