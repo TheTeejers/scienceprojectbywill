@@ -361,50 +361,94 @@ function gotDataCatsAndDogs(data){
 
 $('ol').append('<h2 class="message">Total Cats in the Family: '+ catsInFamilySum +'</h2>');
    $('ol').append('<p class="message"> Average cats per family: '+Number((catsInFamilySum/catsInFamilyTotal.length).toFixed(4))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Costs: $'+ catCostsTotalSum +'</h3>');
    $('ol').append('<p class="message">Average Total Cost per cat: $'+Number((catCostsTotalSum/catsInFamilySum).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Food: $'+ catFoodSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catFoodSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catFoodSum/catFoodTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Food Container: $'+ catFoodContainerSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catFoodContainerSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catFoodContainerSum/catFoodContainerTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Bowls: $'+ catBowlsSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catBowlsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catBowlsSum/catBowlsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Litter: $'+ catLitterSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catLitterSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catLitterSum/catLitterTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Litter Box: $'+ catLitterBoxSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catLitterBoxSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catLitterBoxSum/catLitterBoxTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Litter Scooper: $'+ catLitterScooperSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catLitterScooperSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catLitterScooperSum/catLitterScooperTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Toys: $'+ catToysSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catToysSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catLitterScooperSum/catLitterScooperTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Medicine: $'+ catMedicineSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catMedicineSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catMedicineSum/catMedicineTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Grooming: $'+ catGroomingSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catGroomingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catGroomingSum/catGroomingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Carrier: $'+ catCarrierSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catCarrierSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catCarrierSum/catCarrierTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Clothing: $'+ catClothingSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catClothingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catClothingSum/catClothingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Treats: $'+ catTreatsSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catTreatsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catTreatsSum/catTreatsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Bedding: $'+ catBeddingSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catBeddingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catBeddingSum/catBeddingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Tower: $'+ catTowerSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catTowerSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catTowerSum/catTowerTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Scratching Post: $'+ catScratchingPostSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catScratchingPostSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catScratchingPostSum/catScratchingPostTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Training: $'+ catTrainingSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catTrainingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catTrainingSum/catTrainingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Lodging: $'+ catLodgingSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catLodgingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catLodgingSum/catLodgingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Sitter: $'+ catSitterSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catSitterSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catSitterSum/catSitterTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Veterinary: $'+ catVeterinarySum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catVeterinarySum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catVeterinarySum/catVeterinaryTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat House Modifications: $'+ catHouseModificationsSum +'</h3>');
    $('ol').append('<p class="message">Average per cat: $'+Number((catHouseModificationsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per Year: $'+Number((catHouseModificationsSum/catHouseModificationsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Cat Purchase: $'+ catPurchaseSum +'</h3>');
-   $('ol').append('<p class="message">Average per cat: $'+Number((catPurchaseSum/catsInFamilySum).toFixed(2))+'</p><br><br>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catPurchaseSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per cat purchased: $'+Number((catPurchaseSum/catPurchaseTotal.length).toFixed(2))+'</p>');
+
 
 }
 

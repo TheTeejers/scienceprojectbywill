@@ -348,61 +348,111 @@ function gotDataCatsAndDogs(data){
      return a + b;
    });
 
-
+console.log(dogFoodContainerTotal);
 
 
   $('ol').append('<h2 class="message">Total Dogs in the Family: '+ dogsInFamilySum +'</h2>');
    $('ol').append('<p class="message">Average per dogs per family: '+Number((dogsInFamilySum/dogsInFamilyTotal.length).toFixed(4))+'</p>');
+
    $('ol').append('<h3 class="message">Total dog Costs: $'+ dogCostsTotalSum +'</h3>');
    $('ol').append('<p class="message">Average Total Cost per dog: $'+Number((dogCostsTotalSum/dogsInFamilySum).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Food: $'+ dogFoodSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogFoodSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogFoodSum/dogFoodTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Food Container: $'+ dogFoodContainerSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogFoodContainerSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogFoodContainerSum/dogFoodContainerTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Bowls: $'+ dogBowlsSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogBowlsSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogBowlsSum/dogBowlsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Collars: $'+ dogCollarsSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogCollarsSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogCollarsSum/dogCollarsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Leash: $'+ dogLeashSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogLeashSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogLeashSum/dogLeashTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Walker: $'+ dogWalkerSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogWalkerSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogWalkerSum/dogWalkerTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog PoopBags: $'+ dogPoopBagsSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogPoopBagsSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogPoopBagsSum/dogPoopBagsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog PooperScooper: $'+ dogPooperScooperSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogPooperScooperSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogPooperScooperSum/dogPooperScooperTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Toys: $'+ dogToysSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogToysSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogToysSum/dogToysTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Medicine: $'+ dogMedicineSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogMedicineSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogMedicineSum/dogMedicineTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Grooming: $'+ dogGroomingSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogGroomingSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogGroomingSum/dogGroomingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Carrier: $'+ dogCarrierSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogCarrierSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogCarrierSum/dogCarrierTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Clothing: $'+ dogClothingSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogClothingSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogClothingSum/dogClothingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Treats: $'+ dogTreatsSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogTreatsSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogTreatsSum/dogTreatsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Training: $'+ dogTrainingSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogTrainingSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogTrainingSum/dogTrainingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Carrier: $'+ dogCarrierSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogCarrierSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogCarrierSum/dogCarrierTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Bedding: $'+ dogBeddingSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogBeddingSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogBeddingSum/dogBeddingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog House: $'+ dogHouseSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogHouseSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogHouseSum/dogHouseTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Lodging: $'+ dogLodgingSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogLodgingSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogLodgingSum/dogLodgingTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Sitter: $'+ dogSitterSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogSitterSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogSitterSum/dogSitterTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Veterinary: $'+ dogVeterinarySum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogVeterinarySum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogVeterinarySum/dogVeterinaryTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog HouseModifications: $'+ dogHouseModificationsSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogHouseModificationsSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogHouseModificationsSum/dogHouseModificationsTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog YardLeash: $'+ dogYardLeashSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogYardLeashSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Total Cost per Year: $'+Number((dogYardLeashSum/dogYardLeashTotal.length).toFixed(2))+'</p>');
+
    $('ol').append('<h3 class="message">Total Dog Purchase: $'+ dogPurchaseSum +'</h3>');
    $('ol').append('<p class="message">Average per dog: $'+Number((dogPurchaseSum/dogsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<p class="message">Average Cost per dog purchased: $'+Number((dogPurchaseSum/dogPurchaseTotal.length).toFixed(2))+'</p>');
+
 
 }
 
