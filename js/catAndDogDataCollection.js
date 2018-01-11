@@ -127,7 +127,7 @@ savePetCosts(
   dogYardLeash,
   catPurchase,
   dogPurchase,
-  dogTraining;)
+  dogTraining);
 
 // // clear out form
 
