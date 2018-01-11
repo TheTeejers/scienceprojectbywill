@@ -74,6 +74,7 @@ var dogHouseModifications = getInputValue('dogHouseModifications');
 var dogYardLeash = getInputValue('dogYardLeash');
 var catPurchase = getInputValue('catPurchase');
 var dogPurchase = getInputValue('dogPurchase');
+var dogTraining = getInputValue('dogTraining');
 
 
 
@@ -125,7 +126,8 @@ savePetCosts(
   dogHouseModifications,
   dogYardLeash,
   catPurchase,
-  dogPurchase);
+  dogPurchase,
+  dogTraining;
 
 // // clear out form
 
@@ -188,7 +190,8 @@ function savePetCosts(
     dogHouseModifications,
     dogYardLeash,
     catPurchase,
-    dogPurchase){
+    dogPurchase,
+    dogTraining){
 
   var newPetCostsRef = petCostsRef.push();
     newPetCostsRef.set({
@@ -238,7 +241,8 @@ function savePetCosts(
       dogHouseModifications: dogHouseModifications,
       dogYardLeash: dogYardLeash,
       catPurchase: catPurchase,
-      dogPurchase: dogPurchase
+      dogPurchase: dogPurchase,
+      dogTraining: dogTraining,
   });
 
   //show alert
