@@ -10,12 +10,9 @@ var config = {
   firebase.initializeApp(config);
   database = firebase.database();
 
-  var refCatsAndDogs = database.ref('catAndDogCosts');
-  var refCats = database.ref('catCosts');
-  var refDogs = database.ref('dogCosts');
+var refCatsAndDogs = database.ref('catAndDogCosts');
   refCatsAndDogs.on('value', gotDataCatsAndDogs, errData);
-  // refCats.on('value', gotDataCats, errData);
-  // refDogs.on('value', gotDataDogs, errData);
+
   var catsInFamily = [];
   var inputData = [];
   var catFood = [];
@@ -98,9 +95,8 @@ function gotDataCatsAndDogs(data){
     catPurchase.push(inputData[i].catPurchase);
   }
 
-
   for (var i = 0; i < catFood.length; i++ ){
-    if (catFood[i] !== '' ){
+    if (catFood[i] > 0 ){
       catFoodTotal.push(parseInt(catFood[i]));
     }
    }
@@ -110,7 +106,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catFoodContainer.length; i++ ){
-    if (catFoodContainer[i] !== '' ){
+    if (catFoodContainer[i] > 0 ){
       catFoodContainerTotal.push(parseInt(catFoodContainer[i]));
     }
    }
@@ -120,7 +116,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catBowls.length; i++ ){
-    if (catBowls[i] !== '' ){
+    if (catBowls[i] > 0 ){
       catBowlsTotal.push(parseInt(catBowls[i]));
     }
    }
@@ -130,7 +126,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catCollars.length; i++ ){
-    if (catCollars[i] !== '' ){
+    if (catCollars[i] > 0 ){
       catCollarsTotal.push(parseInt(catCollars[i]));
     }
    }
@@ -140,7 +136,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catLitter.length; i++ ){
-    if (catLitter[i] !== '' ){
+    if (catLitter[i] > 0 ){
       catLitterTotal.push(parseInt(catLitter[i]));
     }
    }
@@ -150,7 +146,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catLitterBox.length; i++ ){
-    if (catLitterBox[i] !== '' ){
+    if (catLitterBox[i] > 0 ){
       catLitterBoxTotal.push(parseInt(catLitterBox[i]));
     }
    }
@@ -160,7 +156,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catLitterScooper.length; i++ ){
-    if (catLitterScooper[i] !== '' ){
+    if (catLitterScooper[i] > 0 ){
       catLitterScooperTotal.push(parseInt(catLitterScooper[i]));
     }
    }
@@ -170,7 +166,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catToys.length; i++ ){
-    if (catToys[i] !== '' ){
+    if (catToys[i] > 0 ){
       catToysTotal.push(parseInt(catToys[i]));
     }
    }
@@ -180,7 +176,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catMedicine.length; i++ ){
-    if (catMedicine[i] !== '' ){
+    if (catMedicine[i] > 0 ){
       catMedicineTotal.push(parseInt(catMedicine[i]));
     }
    }
@@ -190,7 +186,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catGrooming.length; i++ ){
-    if (catGrooming[i] !== '' ){
+    if (catGrooming[i] > 0 ){
       catGroomingTotal.push(parseInt(catGrooming[i]));
     }
    }
@@ -200,7 +196,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catCarrier.length; i++ ){
-    if (catCarrier[i] !== '' ){
+    if (catCarrier[i] > 0 ){
       catCarrierTotal.push(parseInt(catCarrier[i]));
     }
    }
@@ -210,7 +206,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catClothing.length; i++ ){
-    if (catClothing[i] !== '' ){
+    if (catClothing[i] > 0 ){
       catClothingTotal.push(parseInt(catClothing[i]));
     }
    }
@@ -220,7 +216,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catTreats.length; i++ ){
-    if (catTreats[i] !== '' ){
+    if (catTreats[i] > 0 ){
       catTreatsTotal.push(parseInt(catTreats[i]));
     }
    }
@@ -230,7 +226,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catBedding.length; i++ ){
-    if (catBedding[i] !== '' ){
+    if (catBedding[i] > 0 ){
       catBeddingTotal.push(parseInt(catBedding[i]));
     }
    }
@@ -240,7 +236,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catTower.length; i++ ){
-    if (catTower[i] !== '' ){
+    if (catTower[i] > 0 ){
       catTowerTotal.push(parseInt(catTower[i]));
     }
    }
@@ -250,7 +246,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catScratchingPost.length; i++ ){
-    if (catScratchingPost[i] !== '' ){
+    if (catScratchingPost[i] > 0 ){
       catScratchingPostTotal.push(parseInt(catScratchingPost[i]));
     }
    }
@@ -260,7 +256,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catTraining.length; i++ ){
-    if (catTraining[i] !== '' ){
+    if (catTraining[i] > 0 ){
       catTrainingTotal.push(parseInt(catTraining[i]));
     }
    }
@@ -270,7 +266,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catLodging.length; i++ ){
-    if (catLodging[i] !== '' ){
+    if (catLodging[i] > 0 ){
       catLodgingTotal.push(parseInt(catLodging[i]));
     }
    }
@@ -280,7 +276,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catSitter.length; i++ ){
-    if (catSitter[i] !== '' ){
+    if (catSitter[i] > 0 ){
       catSitterTotal.push(parseInt(catSitter[i]));
     }
    }
@@ -290,7 +286,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catVeterinary.length; i++ ){
-    if (catVeterinary[i] !== '' ){
+    if (catVeterinary[i] > 0 ){
       catVeterinaryTotal.push(parseInt(catVeterinary[i]));
     }
    }
@@ -299,8 +295,8 @@ function gotDataCatsAndDogs(data){
    });
 
 
-   for (var i = 0; i < catHouseModifications.length; i++ ){
-    if (catHouseModifications[i] !== '' ){
+   for (var i = 0; i <= catHouseModifications.length; i++ ){
+    if (catHouseModifications[i] > 0){
       catHouseModificationsTotal.push(parseInt(catHouseModifications[i]));
     }
    }
@@ -310,7 +306,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catPurchase.length; i++ ){
-    if (catPurchase[i] !== '' ){
+    if (catPurchase[i] > 0 ){
       catPurchaseTotal.push(parseInt(catPurchase[i]));
     }
    }
@@ -320,7 +316,7 @@ function gotDataCatsAndDogs(data){
 
 
    for (var i = 0; i < catsInFamily.length; i++ ){
-    if (catsInFamily[i] !== '' ){
+    if (catsInFamily[i] > 0 ){
       catsInFamilyTotal.push(parseInt(catsInFamily[i]));
     }
    }
@@ -330,62 +326,91 @@ function gotDataCatsAndDogs(data){
 
 
 
-console.log('your cats', catsInFamilyTotal);
-console.log('your ', catsInFamilySum);
+   var catCostsTotal = [
+     catFoodSum,
+     catFoodContainerSum,
+     catBowlsSum,
+     catCollarsSum,
+     catLitterSum,
+     catLitterBoxSum,
+     catLitterScooperSum,
+     catToysSum,
+     catMedicineSum,
+     catGroomingSum,
+     catCarrierSum,
+     catClothingSum,
+     catTreatsSum,
+     catBeddingSum,
+     catTowerSum,
+     catScratchingPostSum,
+     catTrainingSum,
+     catLodgingSum,
+     catSitterSum,
+     catVeterinarySum,
+     catHouseModificationsSum,
+     catPurchaseSum
+   ];
+
+   var catCostsTotalSum = catCostsTotal.reduce(function (a, b) {
+     return a + b;
+   });
 
 
-$('div').append('<p class="message">Total Cats in the Family: '+ catsInFamilySum +'    Average cats per family: '+Number((catsInFamilySum/inputData.length).toFixed(4))+'</p>');
-   $('ol').append('<li><p class="message">Total Cat Food: $'+ catFoodSum +'    Average per cat: $'+Number((catFoodSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Food Container: $'+ catFoodContainerSum +'    Average per cat: $'+Number((catFoodContainerSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Bowls: $'+ catBowlsSum +'    Average per cat: $'+Number((catBowlsSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Litter: $'+ catLitterSum +'    Average per cat: $'+Number((catLitterSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Litter Box: $'+ catLitterBoxSum +'    Average per cat: $'+Number((catLitterBoxSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Litter Scooper: $'+ catLitterScooperSum +'    Average per cat: $'+Number((catLitterScooperSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Toys: $'+ catToysSum +'    Average per cat: $'+Number((catToysSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Medicine: $'+ catMedicineSum +'    Average per cat: $'+Number((catMedicineSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Grooming: $'+ catGroomingSum +'    Average per cat: $'+Number((catGroomingSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Carrier: $'+ catCarrierSum +'    Average per cat: $'+Number((catCarrierSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Clothing: $'+ catClothingSum +'    Average per cat: $'+Number((catClothingSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Treats: $'+ catTreatsSum +'    Average per cat: $'+Number((catTreatsSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Bedding: $'+ catBeddingSum +'    Average per cat: $'+Number((catBeddingSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Tower: $'+ catTowerSum +'    Average per cat: $'+Number((catTowerSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Scratching Post: $'+ catScratchingPostSum +'    Average per cat: $'+Number((catScratchingPostSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Training: $'+ catTrainingSum +'    Average per cat: $'+Number((catTrainingSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Lodging: $'+ catLodgingSum +'    Average per cat: $'+Number((catLodgingSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Sitter: $'+ catSitterSum +'    Average per cat: $'+Number((catSitterSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Veterinary: $'+ catVeterinarySum +'    Average per cat: $'+Number((catVeterinarySum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat House Modifications: $'+ catHouseModificationsSum +'    Average per cat: $'+Number((catHouseModificationsSum/catsInFamilySum).toFixed(2))+'</p></li>');
-   $('ol').append('<li><p class="message">Total Cat Purchase: $'+ catPurchaseSum +'    Average per cat: $'+Number((catPurchaseSum/catsInFamilySum).toFixed(2))+'</p></li>');
+
+
+
+$('ol').append('<h2 class="message">Total Cats in the Family: '+ catsInFamilySum +'</h2>');
+   $('ol').append('<p class="message"> Average cats per family: '+Number((catsInFamilySum/catsInFamilyTotal.length).toFixed(4))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Costs: $'+ catCostsTotalSum +'</h3>');
+   $('ol').append('<p class="message">Average Total Cost per cat: $'+Number((catCostsTotalSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Food: $'+ catFoodSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catFoodSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Food Container: $'+ catFoodContainerSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catFoodContainerSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Bowls: $'+ catBowlsSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catBowlsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Litter: $'+ catLitterSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catLitterSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Litter Box: $'+ catLitterBoxSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catLitterBoxSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Litter Scooper: $'+ catLitterScooperSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catLitterScooperSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Toys: $'+ catToysSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catToysSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Medicine: $'+ catMedicineSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catMedicineSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Grooming: $'+ catGroomingSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catGroomingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Carrier: $'+ catCarrierSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catCarrierSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Clothing: $'+ catClothingSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catClothingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Treats: $'+ catTreatsSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catTreatsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Bedding: $'+ catBeddingSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catBeddingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Tower: $'+ catTowerSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catTowerSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Scratching Post: $'+ catScratchingPostSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catScratchingPostSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Training: $'+ catTrainingSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catTrainingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Lodging: $'+ catLodgingSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catLodgingSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Sitter: $'+ catSitterSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catSitterSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Veterinary: $'+ catVeterinarySum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catVeterinarySum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat House Modifications: $'+ catHouseModificationsSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catHouseModificationsSum/catsInFamilySum).toFixed(2))+'</p>');
+   $('ol').append('<h3 class="message">Total Cat Purchase: $'+ catPurchaseSum +'</h3>');
+   $('ol').append('<p class="message">Average per cat: $'+Number((catPurchaseSum/catsInFamilySum).toFixed(2))+'</p><br><br>');
+
 }
-
-
-
 
 function errData(err) {
   console.log('Error!');
   console.log(err);
 
-  console.log('catfood',catFood);
-   console.log('catFoodContainer',catFoodContainer)
-   console.log('catBowls', catBowls);
-   console.log('catCollars', catCollars);
-   console.log('catLitter', catLitter);
-   console.log('catLitterBox', catLitterBox);
-   console.log('catLitterScooper', catLitterScooper);
-   console.log('catToys', catToys);
-   console.log('catMedicine', catMedicine);
-   console.log('catGrooming', catGrooming);
-   console.log('catCarrier', catCarrier);
-   console.log('catClothing', catClothing);
-   console.log('catTreats', catTreats);
-   console.log('catBedding', catBedding);
-   console.log('catTower', catTower);
-   console.log('catScratchingPost', catScratchingPost);
-   console.log('catTraining', catTraining);
-   console.log('catLodging', catLodging);
-   console.log('catSitter', catSitter);
-   console.log('catVeterinary', catVeterinary);
-   console.log('catHouseModifications', catHouseModifications);
-   console.log('catPurchase', catPurchase);
-   console.log(catClothingTotal);
+
 }

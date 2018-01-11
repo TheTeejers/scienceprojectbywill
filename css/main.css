@@ -7,7 +7,7 @@ body {
   padding-bottom: 60px;
 }
 
-.returnHome, .catsButton, .dogsButton, .catsAndDogsButton {
+.returnHome, .catsButton, .dogsButton, .catsAndDogsButton, .dogCostButton, .catCostButton {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
