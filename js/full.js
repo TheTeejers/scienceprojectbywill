@@ -675,8 +675,7 @@ function gotDataCatsAndDogs(data){
    });
 
 
-console.log('your cats', dogPurchaseTotal);
-console.log('your ', catCostsTotalSum);
+
 
 
 $('ol').append('<h2 class="message">Total Cats in the Family: '+ catsInFamilySum +'</h2>');

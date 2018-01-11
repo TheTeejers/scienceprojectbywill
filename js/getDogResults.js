@@ -348,10 +348,12 @@ function gotDataCatsAndDogs(data){
      return a + b;
    });
 
-console.log(dogFoodContainerTotal);
+console.log(dogsInFamilyTotal);
 
+  $('div').append('<h1 class="message">Total Submitted Surveys: '+ inputData.length +'</h1>');
+   $('div').append('<h1 class="message">Total Submitted Surveys for Dogs: '+ dogsInFamilyTotal.length +'</h1>');
 
-  $('ol').append('<h2 class="message">Total Dogs in the Family: '+ dogsInFamilySum +'</h2>');
+   $('ol').append('<h2 class="message">Total Dogs in the Family: '+ dogsInFamilySum +'</h2>');
    $('ol').append('<p class="message">Average per dogs per family: '+Number((dogsInFamilySum/dogsInFamilyTotal.length).toFixed(4))+'</p>');
 
    $('ol').append('<h3 class="message">Total dog Costs: $'+ dogCostsTotalSum +'</h3>');

@@ -359,7 +359,10 @@ function gotDataCatsAndDogs(data){
 
 
 
-$('ol').append('<h2 class="message">Total Cats in the Family: '+ catsInFamilySum +'</h2>');
+  $('div').append('<h1 class="message">Total Submitted Surveys: '+ inputData.length +'</h1>');
+   $('div').append('<h1 class="message">Total Submitted Surveys for Cats: '+ catsInFamilyTotal.length +'</h1>');
+
+   $('ol').append('<h2 class="message">Total Cats in the Family: '+ catsInFamilySum +'</h2>');
    $('ol').append('<p class="message"> Average cats per family: '+Number((catsInFamilySum/catsInFamilyTotal.length).toFixed(4))+'</p>');
 
    $('ol').append('<h3 class="message">Total Cat Costs: $'+ catCostsTotalSum +'</h3>');
