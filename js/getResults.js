@@ -63,14 +63,9 @@ var config = {
   var catHouseModificationsTotal = [];
   var catPurchaseTotal = [];
   var catsInFamilyTotal = [];
-  var catsInFamilyTotalSum = [];
 
 
 
-var catsInFamilySum = 0;
-for (var x = 0; x < catsInFamilyTotal.length; x++){
-  catsInFamilySum += catsInFamilyTotal[x]
-}
 // get data
 function gotDataCatsAndDogs(data){
   var catsInFamilySum = [];
@@ -335,16 +330,11 @@ function gotDataCatsAndDogs(data){
 
 
 
-
-var catsInFamilySum = 0;
-for (var x = 0; x < catsInFamilyTotal.length; x++){
-  catsInFamilySum += catsInFamilyTotal[x]
-}
 console.log('your cats', catsInFamilyTotal);
 console.log('your ', catsInFamilySum);
 
 
-$('ol').append('<li><p class="message">Total Cats in the Family: '+ catsInFamilySum +'    Average cats per family: '+Number((catsInFamilySum/inputData.length).toFixed(4))+'</p></li>');
+$('div').append('<p class="message">Total Cats in the Family: '+ catsInFamilySum +'    Average cats per family: '+Number((catsInFamilySum/inputData.length).toFixed(4))+'</p>');
    $('ol').append('<li><p class="message">Total Cat Food: $'+ catFoodSum +'    Average per cat: $'+Number((catFoodSum/catsInFamilySum).toFixed(2))+'</p></li>');
    $('ol').append('<li><p class="message">Total Cat Food Container: $'+ catFoodContainerSum +'    Average per cat: $'+Number((catFoodContainerSum/catsInFamilySum).toFixed(2))+'</p></li>');
    $('ol').append('<li><p class="message">Total Cat Bowls: $'+ catBowlsSum +'    Average per cat: $'+Number((catBowlsSum/catsInFamilySum).toFixed(2))+'</p></li>');
@@ -368,16 +358,6 @@ $('ol').append('<li><p class="message">Total Cats in the Family: '+ catsInFamily
    $('ol').append('<li><p class="message">Total Cat Purchase: $'+ catPurchaseSum +'    Average per cat: $'+Number((catPurchaseSum/catsInFamilySum).toFixed(2))+'</p></li>');
 }
 
-
-
-var catsInFamilySum = 0;
-for (var x = 0; x < catsInFamilyTotal.length; x++){
-  catsInFamilySum += catsInFamilyTotal[x]
-}
-
-
-console.log('your cats', catsInFamilyTotal);
-console.log('your ', catsInFamilySum);
 
 
 

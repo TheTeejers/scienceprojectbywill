@@ -44,6 +44,7 @@ var dogGrooming = getInputValue('dogGrooming');
 var dogCarrier = getInputValue('dogCarrier');
 var dogClothing = getInputValue('dogClothing');
 var dogTreats = getInputValue('dogTreats');
+var dogTraining = getInputValue('dogTraining');
 var dogBedding = getInputValue('dogBedding');
 var dogHouse = getInputValue('dogHouse');
 var dogLodging = getInputValue('dogLodging');
@@ -73,6 +74,7 @@ savePetCosts(
   dogCarrier,
   dogClothing,
   dogTreats,
+  dogTraining,
   dogBedding,
   dogHouse,
   dogLodging,
