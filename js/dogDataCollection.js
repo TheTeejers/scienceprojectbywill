@@ -124,6 +124,8 @@ function savePetCosts(
     dogHouseModifications,
     dogYardLeash,
     dogPurchase){
+
+
   var newPetCostsRef = petCostsRef.push();
     newPetCostsRef.set({
       ownerName: ownerName,
